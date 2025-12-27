@@ -1,0 +1,26 @@
+{
+  "name": "claude-test",
+  "version": "1.0.0",
+  "description": "Node.js project with TypeScript and ES modules",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "esbuild src/index.tsx --bundle --outfile=dist/bundle.js --format=esm",
+    "dev": "esbuild src/index.tsx --bundle --outfile=dist/bundle.js --format=esm --watch --servedir=public --serve=8000",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "esbuild": "^0.24.2",
+    "typescript": "^5.7.2"
+  }
+}
